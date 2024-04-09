@@ -12,7 +12,7 @@ const Header = (props: Props) => {
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{duration:1}}
+        transition={{ duration: 1 }}
         className='flex flex-row items-center'>
         <SocialIcon fgColor='gray' bgColor='transparent' url="https://www.linkedin.com/in/rayan-sikandar-638758249/" />
         <SocialIcon fgColor='gray' bgColor='transparent' url="https://github.com/RyanSikandar" />
@@ -22,7 +22,7 @@ const Header = (props: Props) => {
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{duration:1}} className='flex flex-row items-center'>
+        transition={{ duration: 1 }} className='flex flex-row items-center'>
         <SocialIcon className='cursor-pointer' network="email" fgColor='gray' bgColor='transparent' />
         <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>get in touch</p>
       </motion.div>
