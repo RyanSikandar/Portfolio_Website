@@ -1,8 +1,9 @@
+'use client'
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
+import { motion } from 'framer-motion'
 
 type Props = {}
-
 const WorkExperience = (props: Props) => {
     return (
         <div className='h-screen relative flex overflow-hidden flex-col text-left
