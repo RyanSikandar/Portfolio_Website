@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 import Image from "next/image";
+import ContactMe from "@/components/ContactMe";
 export default function Home() {
   return (
     <div className="bg-zinc-800 text-white h-screen overflow-scroll snap-y z-0 snap-mandatory overflow-x-hidden overflow-y-scroll ">
@@ -30,6 +31,10 @@ export default function Home() {
 
       <section id="projects" className="snap-start">
         <Projects />
+      </section>
+
+      <section className="snap-start" id="contact">
+        <ContactMe />
       </section>
     </div>
   );
