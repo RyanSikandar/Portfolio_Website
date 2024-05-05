@@ -37,7 +37,12 @@ export default function About({ }: Props) {
                 </h4>
 
                 <p className='text-md'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia alias nobis enim soluta dolor fugit, accusamus exercitationem aliquid reprehenderit iure ut ratione ea repellat nostrum eos repellendus tempore, natus ab!
+                I am second year Software Engineering Student at NUST, Islamabad. I love to learn and explore new things, let it be new tech or a new sport or a new cool spot in Islamabad. 
+                <br/><br/>I am a passionate developer with a keen interest in solving real world problems and materializing those solutions into products through code.<br/>
+                <br/><br/>Talking about my hobbies, I love cars and motorsport other than that I am a huge fan of FC Barcelona.  
+                <br/><br/>Currently I am working on a startup idea and actively working on my technical and non technical skills to become a well rounded Software Engineer.
+
+                    
                 </p>
             </div>
         </motion.div>

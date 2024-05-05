@@ -1,10 +1,33 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion';
+import { profileEnd } from 'console';
+import { title } from 'process';
+import { MdDescription } from 'react-icons/md';
+import Link from 'next/link';
+import { SocialIcon } from 'react-social-icons';
 type Props = {}
 
 function Projects({ }: Props) {
-    const projects = [1, 2, 3, 4, 5];
+    const projects = [
+        {
+            title: "Smart Management System",
+            description: "A complete system for managing the complaints and requests of the residents of a society. It is a web application made for a client in MERN.",
+            src: "/smartcontrol.png",
+            to: "https://smart-control-app-frontend.vercel.app/"
+        },
+        {
+            title: "An Inventory System",
+            description: "A complete system for managing the inventory of a store. Using React, Tailwind, Redux, Node, Express, and MongoDB for a full stack application.",
+            src: "/pinvent.png",
+            to: "https://inventory-frontend-three-khaki.vercel.app/"
+        },
+        {
+            title: "Google 2.0",
+            description: "A complete search engine making use of Data Structures such as Forward Indexing, Inverted Indexing, and Trie Data Structure. An inspiration from Google.",
+            src: "/google.png",
+            to: "https://github.com/RyanSikandar/DSA-Project"
+        }];
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -13,6 +36,8 @@ function Projects({ }: Props) {
 
             className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Projects</h3>
+            <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-md'>Click on the name to go to the Project Link</h3>
+            <h3 className='absolute top-44 uppercase tracking-[3px] text-gray-500 text-md'>For more visit my <SocialIcon fgColor='gray' bgColor='transparent' url="https://github.com/RyanSikandar" /></h3>
 
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
                 {projects.map((project, i) => (
@@ -26,11 +51,11 @@ function Projects({ }: Props) {
                             whileInView={{ opacity: 1, y: 0 }
                             }
                             viewport={{ once: true }}
-                            src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png" alt="" />
+                            src={project.src} alt="" />
                         <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                             <h4 className='text-4xl font-semibold text-center'>
-                                <span className='underline decoration-[#F7AB0A]/50'>Case Study of {i + 1} and {projects.length}:</span>{" "}UPS</h4>
-                            <p className='text-lg text-center md:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quaerat. Dolores, quas laudantium saepe commodi et nisi architecto vero ullam natus ab ex mollitia esse eligendi sunt facere sequi molestias.</p>
+                                <span className='underline decoration-[#F7AB0A]/50'>Case Study of {i + 1} and {projects.length}:</span>{" "}<Link href={project.to}>{project.title}</Link></h4>
+                            <p className='text-lg text-center md:text-left'>{project.description}</p>
                         </div>
                     </div>
                 ))}

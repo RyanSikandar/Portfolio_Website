@@ -37,7 +37,7 @@ const ExperienceCard = (props: Props) => {
                     <IoLogoFigma size={25} />
                     <FaReact size={25} />
                 </div>
-                <p className='uppercase py-5 text-gray-300'>Started.. Ended..</p>
+                <p className='uppercase py-5 text-gray-300'>Nov '23 - Feb '24</p>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
                     <li>Developed a web portal for InLights, company focused on automating traffic signals in Islamabad.</li>
                     <li>Responsible for translating Figma design to code with the use of React and Tailwind ensuring seamless integration with UI elements.</li>
