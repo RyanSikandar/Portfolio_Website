@@ -1,3 +1,4 @@
+"use client"
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -12,7 +13,7 @@ export default function Home() {
     <div className="bg-zinc-800 text-white h-screen overflow-scroll snap-y z-0 snap-mandatory overflow-x-hidden overflow-y-scroll scrollbar scrollbar-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Header />
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero />  
       </section>
 
       {/* About Section */}
