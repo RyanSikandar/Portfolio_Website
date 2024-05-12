@@ -9,8 +9,8 @@ type Props = {};
 
 const ExperienceCard = (props: Props) => {
     return (
-        <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
-        md:w-[600px] lg:w-[900px] snap-center p-10 bg-[#292929] opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+        <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px]
+        md:w-[600px] lg:w-[1000px] snap-center p-10 bg-[#292929] opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden'>
             <motion.img
                 initial={{
                     y: -100,
@@ -24,7 +24,7 @@ const ExperienceCard = (props: Props) => {
                 transition={{ duration: 1.2 }}
                 alt='hello' src={'/Inlights.png'}
                 className='
-            h-32 w-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center'
+            h-32 w-32 rounded-full object-cover object-center'
             />
             <div className='px-0 md:px-10'>
                 <h4 className='text-4xl font-light'>Web Dev Intern</h4>
