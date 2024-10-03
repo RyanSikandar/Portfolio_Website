@@ -23,10 +23,10 @@ function ContactMe({ }: Props) {
 
   return (
     <div className='relative min-h-screen flex flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center mx-auto items-center'>
-      <h3 className='absolute top-8 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Contact Me</h3>
+      <h3 className='absolute top-8 md:top-20 uppercase tracking-[20px] text-gray-500 text-3xl'>Contact Me</h3>
 
       <div className='flex flex-col space-y-4 lg:mt-24 md:mt-12 lg:px-6'>
-        <h4 className='text-3xl lg:text-3xl font-semibold text-center'>I have got just what you need{' '}
+        <h4 className='text-3xl lg:text-2xl font-semibold text-center'>I have got just what you need{' '}
           <span className='decoration-[#F7AB0A]/50 underline'>Let&apos;s Talk</span>
         </h4>
 
@@ -47,8 +47,8 @@ function ContactMe({ }: Props) {
         </div>
 
         <form className='flex flex-col space-y-2 w-full md:w-fit mx-auto' onSubmit={handleSubmit(onSubmit)}>
-          <div className='flex flex-col space-y-2 md:flex-row md:space-x-2'>
-            <input {...register('name')} type="text" className='contactInfo' placeholder='Name' />
+          <div className='flex-col space-y-2 md:flex-row md:space-x-2'>
+            <input {...register('name')} type='text' className='contactInfo' placeholder='Name'/>
             <input {...register('email')} type="email" className='contactInfo' placeholder='Email' />
           </div>
           <input {...register('subject')} type='text' className='contactInfo' placeholder='Subject' />
