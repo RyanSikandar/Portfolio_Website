@@ -31,10 +31,6 @@ function ContactMe({ }: Props) {
         </h4>
 
         <div className='space-y-5 md:space-y-10'>
-          <div className='flex items-center space-x-2 md:space-x-5 justify-center'>
-            <PhoneIcon className='text-[#F7AB0A] h-6 w-6 md:h-7 md:w-7 animate-pulse' />
-            <p className='text-base md:text-xl'>+923377655711</p>
-          </div>
 
           <div className='flex items-center space-x-2 md:space-x-5 justify-center'>
             <MapPinIcon className='text-[#F7AB0A] h-6 w-6 md:h-7 md:w-7 animate-pulse' />
