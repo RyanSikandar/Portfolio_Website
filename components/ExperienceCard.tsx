@@ -6,7 +6,7 @@ import { IoLogoJavascript, IoLogoFigma } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 
 type Props = {
-    
+
 };
 
 const ExperienceCard = (props: Props) => {
@@ -46,6 +46,7 @@ const ExperienceCard = (props: Props) => {
                     <li key="4">Collaborated in a team environment, actively participated in the design process.</li>
                 </ul>
             </div>
+            
         </article>
     )
 }
