@@ -9,6 +9,19 @@ type Props = {};
 function Projects({ }: Props) {
     const projects = [
         {
+            title:"Taqseem",
+            description: "Taqseem was made to help people find verified cases, donate and keep up with progress in realtime."
+            ,src:"/taqseem.png",
+            to:"https://github.com/RyanSikandar/taqseem-frontend"
+
+        },
+        {
+            title:"Ehsaas",
+            description:"Ehsaas connects nurses, overseas Pakistanis and patients to provide home healthcare service in Pakistan.",
+            src:"/Ehsaas.png",
+            to:"https://ehsaas.pk"
+        },
+        {
             title: "Smart Management System",
             description: "A complete system for managing the complaints and requests of the residents of a society. It is a web application made for a client in MERN.",
             src: "/smartcontrol.png",
@@ -34,8 +47,7 @@ function Projects({ }: Props) {
 
             className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Projects</h3>
-            <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-md hidden sm:block'>Click on the name to go to the Project Link</h3>
-            <h3 className='absolute top-44 uppercase tracking-[3px] text-gray-500 text-md hidden sm:block'>For more visit my <SocialIcon fgColor='gray' bgColor='transparent' url="https://github.com/RyanSikandar" /></h3>
+            <h3 className='absolute top-32 uppercase tracking-[3px] text-gray-500 text-md'>For more visit my <SocialIcon fgColor='gray' bgColor='transparent' url="https://github.com/RyanSikandar" /></h3>
 
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
                 {projects.map((project, i) => (
