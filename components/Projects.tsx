@@ -18,7 +18,7 @@ function Projects({ }: Props) {
         {
             title:"Ehsaas",
             description:"Ehsaas connects nurses, overseas Pakistanis and patients to provide home healthcare service in Pakistan.",
-            src:"/ehsaas.png",
+            src:"/Ehsaas.png",
             to:"https://ehsaas.pk"
         },
         {
